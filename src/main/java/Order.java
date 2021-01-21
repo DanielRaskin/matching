@@ -1,10 +1,17 @@
+/**
+ * BUY and SELL operations
+ */
 enum Operation {SELL, BUY}
 
+/**
+ * Order
+ * BUY/SELL, symbol, price and quantity
+ */
 class Order {
     private final Operation operation;
     private final String symbol;
-    private final int quantity;
     private final int price;
+    private final int quantity;
 
     Order(Operation operation, String symbol, int price, int quantity) {
         if ((operation == null) || (symbol == null)) {
@@ -37,7 +44,7 @@ class Order {
     }
 
     Order getMatchingOrder() {
-        return new Order(operation == Operation.BUY ? Operation.SELL : Operation.BUY, symbol, quantity, price);
+        return new Order(operation == Operation.BUY ? Operation.SELL : Operation.BUY, symbol, price, quantity);
     }
 
     @Override
@@ -60,6 +67,9 @@ class Order {
     }
 }
 
+/**
+ * Client name + order
+ */
 class ClientOrder {
     private final String clientName;
     private final Order order;

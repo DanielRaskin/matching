@@ -1,3 +1,6 @@
+/**
+ * Orders reader
+ */
 public class OrderDataReader extends DataReader<ClientOrder> {
     private static final String FILE_NAME = "orders.txt";
 

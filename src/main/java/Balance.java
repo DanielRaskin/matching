@@ -1,6 +1,9 @@
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Balance - how many dollars and shares
+ */
 class Balance {
     private int dollars = 0;
     private final Map<String, Integer> shares = new HashMap<>();
@@ -23,6 +26,9 @@ class Balance {
     }
 }
 
+/**
+ * Client name + balance
+ */
 class ClientBalance {
     private final String clientName;
     private final Balance balance;

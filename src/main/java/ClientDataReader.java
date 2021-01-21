@@ -1,3 +1,6 @@
+/**
+ * Clients reader from file
+ */
 class ClientDataReader extends DataReader<ClientBalance> {
     private static final String FILE_NAME = "clients.txt";
 

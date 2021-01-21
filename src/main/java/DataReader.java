@@ -4,6 +4,10 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.function.Consumer;
 
+/**
+ * Data reader
+ * @param <T> data type to read
+ */
 abstract class DataReader<T> {
     private static final String DELIMITER = "\t";
     final String fileName;

@@ -2,6 +2,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Map;
 
+/**
+ * Results writer
+ */
 public class ResultWriter {
     private static final String FILE_NAME = "result.txt";
     private static final String SEPARATOR = "\t";
